@@ -1,0 +1,115 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 16px;
+	font-family: 'IBM Plex Sans', sans-serif;
+}
+
+body {
+	background-color: #2fb3b6;
+}
+
+header {
+	width: 100vw;
+	height: 64px;
+	background-color: #2c6c88;
+	position: fixed; /* when scrolling, it remains fixed to its position with respect to the window */
+	top: 0;
+	left: 0;
+	color: #FFF;
+	display: flex; /* a way to display items in a layout */
+	justify-content: center; /* horizontal centring */
+	align-items: center; /* vertical centring */
+	z-index: 1000;
+}
+
+
+main {
+	width: 100vw;
+	position: absolute; /* the absolute position with respect to the whole page */
+	top: 64px;
+	left: 0;
+}
+
+footer {
+	width: 100vw;
+	height: 24px;
+	background-color: #FFF;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	font-size: 12px;
+	padding: 4px;
+}
+
+#center-column {
+	position: absolute;
+	left: 25vw;
+	width: 50vw;
+	background-color: #ecf9f2;
+	padding-bottom: 24px;
+}
+
+.column-tabs {
+	background-color: #FFF;
+	padding: 16px;
+	border-radius: 8px;	
+	font-size: 12px;
+	margin-bottom: 4px;
+	cursor: pointer; /* change cursor aspect when mouse is hover */
+}
+
+.column-tabs:hover { /* change aspect when the mouse touches the element */
+	background-color: #ecf9f2;
+}
+
+.column-tabs p { /* selects elements with tag p inside the .column-tabs elements (ADD A SPACE between the selectors) */
+	display: inline-block;
+}
+
+.post {
+	background-color: #FFF;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 16px;
+	margin-bottom: 16px;
+}
+
+/* collapsible*/
+.collapsible {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+  
+  .active, .collapsible:hover {
+    background-color: #555;
+  }
+  
+  .content {
+    padding: 0 18px;
+    display: none;
+    border-radius: 5px;
+    overflow: none;
+    background-color: #f1f1f1;
+  }
+
+.post-img-container {
+	width: 75%; /* with respect to the width of its container */
+}
+
+.post-img {
+	width: 100%; /* with respect to the width of its container (.post-img-container) */
+}
